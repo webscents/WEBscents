@@ -1,0 +1,96 @@
+/* Style the sidenav container */
+.sidenav {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 240px; /* Adjust the height as needed */
+    z-index: 1;
+}
+
+/* Style the links inside the sidenav */
+#mySidenav a {
+    position: absolute; /* Position them relative to the sidenav */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#about {
+    top: 20px;
+    background-color: #f7b8e1;
+}
+
+#blog {
+    top: 80px;
+    background-color: #FF9BD2; /* Blue */
+}
+
+#projects {
+    top: 140px;
+    background-color: #D63484; /* Red */
+}
+
+#contact {
+    top: 200px;
+    background-color: #402B3A; /* Light Black */
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+.about-area {
+    padding-top: 5%;
+}
+
+.about-content {
+    display: flex;
+}
+
+.about-img {
+    flex: 1;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.about-text {
+    flex: 1;
+    padding-left: 20px; /* Adjust the padding as needed */
+	padding-right:15px;
+}
+
+.about-text h2 {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+}
+
+.about-text p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    color: black;
+}
+
+.about-text a {
+    background: #b5a7f8;
+    color: #fff;
+    padding: 7px 15px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+body {
+    background-color: #EDEDED !important;
+}

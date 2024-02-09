@@ -1,0 +1,801 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.ParallaxVideo {
+    width: 100%;
+    overflow: hidden;
+}
+
+.ParallaxVideo video {
+    width: 100%;
+}
+
+/* Add your other CSS styles here */
+
+/* start for my background of the main page and logo "demon slayer at the center" */
+
+.image1 {
+	width: 100%;
+	height: auto;
+	padding-bottom: 0%;
+	margin-bottom: 0%;
+	background-image: url(images/background tanjiro.gif);
+	z-index: 1;
+}
+
+.logo {
+	position: absolute;
+	width: 900px;
+	height: auto;
+	margin-top: 26%;
+	margin-bottom: 0%;
+	padding-bottom: 0%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+
+/* end for my background of the main page and logo "demon slayer at the center" */
+
+.meetmain {
+	background-color: rgb(26, 25, 24);
+	color: cornsilk;
+	margin: 0%;
+	padding: 5%;
+	text-align: center;
+	font-size: 5em;
+}
+
+.sysnopsisec {
+	background-color: #eaacb9;
+	background-image: url(images/traditional-japanese-wave-pattern-abstract-hand-drawn-line-art-oriental-ocean-wave-clouds-wind-style-art-design-illustration-for-prints-fabric-poster-home-decoration-and-wallpaper-free-vector.jpg);
+	background-size: cover;
+	margin: 0%;
+	width: auto;
+	height: 1000px;
+	position: relative;
+	overflow: hidden;
+}
+
+.thumbnail {
+	padding-top: 10%;
+	padding-left: 350px;
+	height: auto;
+}
+
+/* CSS for the third slideshow (.synopsisec3) */
+
+.synopsisec3 {
+	background-color: #eaacb9;
+	background-image: url(images/bgbggbgb.webp);
+	background-size: cover;
+	margin: 0%;
+	width: 100%;
+	height: auto;
+	position: relative;
+	overflow: hidden;
+}
+
+/* Styles for the third slideshow - follow a similar structure as the previous slideshows */
+
+.container {
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.imgContainer {
+	width: 100%;
+	height: 600px;
+	position: absolute;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 1s;
+}
+
+.slide_div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 30px 0 30px;
+}
+
+.img {
+	position: relative;
+	height: 370px;
+	width: 240px;
+	justify-content: center;
+	transition: 0.7s;
+}
+
+.button {
+	position: absolute;
+	width: 240px;
+	height: 370px;
+	transition: 0.7s;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 20px;
+}
+
+.button:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Target specific styles for each slide in the third slideshow */
+
+#additional_slider1_:target~.imgContainer #additional_img1_,
+#additional_slider1_:target~.imgContainer #additional_button1_ {
+	width: 390px;
+	height: 600px;
+	background-color: transparent;
+	filter: saturate(100%);
+}
+
+#additional_slider2_:target~.imgContainer #additional_img2_,
+#additional_slider2_:target~.imgContainer #additional_button2_ {
+	width: 390px;
+	height: 600px;
+	background-color: transparent;
+	filter: saturate(100%);
+}
+
+#additional_slider3_:target~.imgContainer #additional_img_3,
+#additional_slider3_:target~.imgContainer #additional_button3_ {
+	width: 390px;
+	height: 600px;
+	background-color: transparent;
+	filter: saturate(100%);
+}
+
+#additional_slider4_:target~.imgContainer #additional_img4_,
+#additional_slider4_:target~.imgContainer #additional_button4_ {
+	width: 390px;
+	height: 600px;
+	background-color: transparent;
+	filter: saturate(100%);
+}
+
+#additional_slider1_:target~.imgContainer {
+	left: 20%;
+}
+
+#additional_slider2_:target~.imgContainer {
+	left: 1%;
+}
+
+#additional_slider3_:target~.imgContainer {
+	left: -0%;
+}
+
+#additional_slider4_:target~.imgContainer {
+	left: -10%;
+}
+
+.img {
+	height: 370px;
+}
+
+/*done*/
+
+.meetmain {
+	background-color: rgb(26, 25, 24);
+	color: cornsilk;
+	margin: 0%;
+	padding: 10%;
+	text-align: center;
+	font-size: 5em;
+}
+
+/* start section synopsosec*/
+
+.synopsisec {
+	background-color: #eaacb9(15, 96, 42);
+
+	background-size: contain;
+	margin: 0%;
+	width: 100%;
+	height: auto;
+	position: relative;
+	overflow: hidden
+}
+
+/* slideshow */
+
+/* Slideshow container */
+
+.container {
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.imgContainer {
+	width: 100%;
+	height: 600px;
+	position: absolute;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 1s;
+}
+
+.slide_div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 30px 0 30px;
+}
+
+.img {
+	position: relative;
+	height: 370px;
+	width: 240px;
+	justify-content: center;
+	/* filter: saturate(10%); */
+	transition: 0.7s;
+	/*  background-color: rgba(0, 0, 0, 0.4); */
+	/* border-radius: 20px; */
+}
+
+.button {
+	position: absolute;
+	width: 240px;
+	height: 370px;
+	transition: 0.7s;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 20px;
+}
+
+.button:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+#slider1:target~.imgContainer #img1,
+#slider1:target~.imgContainer #button1 {
+	width: 390px;
+	height: 600px;
+	background-color: transparent;
+	filter: saturate(100%);
+}
+
+#slider2:target~.imgContainer #img2,
+#slider2:target~.imgContainer #button2 {
+	width: 390px;
+	height: 600px;
+	background-color: transparent;
+	filter: saturate(100%);
+}
+
+#slider3:target~.imgContainer #img3,
+#slider3:target~.imgContainer #button3 {
+	width: 390px;
+	height: 600px;
+	background-color: transparent;
+	filter: saturate(100%);
+}
+
+#slider4:target~.imgContainer #img4,
+#slider4:target~.imgContainer #button4 {
+	width: 390px;
+	height: 600px;
+	background-color: transparent;
+	filter: saturate(100%);
+}
+
+#slider5:target~.imgContainer #img5,
+#slider5:target~.imgContainer #button5 {
+	width: 390px;
+	height: 600px;
+	background-color: transparent;
+	filter: saturate(100%);
+}
+
+#slider6:target~.imgContainer #img6,
+#slider6:target~.imgContainer #button6 {
+	width: 390px;
+	height: 600px;
+	background-color: transparent;
+	filter: saturate(100%);
+}
+
+#slider7:target~.imgContainer #img7,
+#slider7:target~.imgContainer #button7 {
+	width: 390px;
+	height: 600px;
+	background-color: transparent;
+	filter: saturate(100%);
+}
+
+#slider8:target~.imgContainer #img8,
+#slider8:target~.imgContainer #button8 {
+	width: 390px;
+	height: 600px;
+	background-color: transparent;
+	filter: saturate(100%);
+}
+
+#slider9:target~.imgContainer #img9,
+#slider9:target~.imgContainer #button9 {
+	width: 390px;
+	height: 600px;
+	background-color: transparent;
+	filter: saturate(100%);
+}
+
+#slider1:target~.imgContainer {
+	left: 80%;
+}
+
+#slider2:target~.imgContainer {
+	left: 60%;
+}
+
+#slider3:target~.imgContainer {
+	left: 40%;
+}
+
+#slider4:target~.imgContainer {
+	left: 20%;
+}
+
+#slider5:target~.imgContainer {
+	left: 0%;
+}
+
+#slider6:target~.imgContainer {
+	left: -20%;
+}
+
+#slider7:target~.imgContainer {
+	left: -40%;
+}
+
+#slider8:target~.imgContainer {
+	left: -60%;
+}
+
+#slider9:target~.imgContainer {
+	left: -80%;
+}
+
+.img {
+	height: 370px;
+}
+
+/*end of slideshow*/
+
+.meetmain {
+	background-color: rgb(26, 25, 24);
+	color: cornsilk;
+	margin: 0%;
+	padding: 10%;
+	text-align: center;
+	font-size: 5em;
+}
+
+/*slideshow for demons naman*/
+
+.synopsisec2 {
+	background-color: #eaacb9;
+	background-image: url(images/sabibibto.jpg);
+	background-size: contain;
+	background-repeat: round;
+	margin: 0%;
+	height: auto;
+	position: relative;
+	overflow: hidden;
+}
+
+/* Styles for the second slideshow - follow a similar structure as the first slideshow */
+
+.container {
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.imgContainer {
+	width: 100%;
+	height: 600px;
+	position: absolute;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 1s;
+}
+
+.slide_div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 30px 0 30px;
+}
+
+.img {
+	position: relative;
+	height: 370px;
+	width: 370px;
+	justify-content: center;
+	transition: 0.7s;
+}
+
+.button {
+	position: absolute;
+	width: 240px;
+	height: 370px;
+	transition: 0.7s;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 20px;
+}
+
+.button:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Target specific styles for each slide in the second slideshow */
+
+#additional_slider1:target~.imgContainer #additional_img1,
+#additional_slider1:target~.imgContainer #additional_button1 {
+	width: 390px;
+	height: 600px;
+	background-color: transparent;
+	filter: saturate(100%);
+}
+
+#additional_slider2:target~.imgContainer #additional_img2,
+#additional_slider2:target~.imgContainer #additional_button2 {
+	width: 390px;
+	height: 600px;
+	background-color: transparent;
+	filter: saturate(100%);
+}
+
+#additional_slider3:target~.imgContainer #additional_img3,
+#additional_slider3:target~.imgContainer #additional_button3 {
+	width: 390px;
+	height: 600px;
+	background-color: transparent;
+	filter: saturate(100%);
+}
+
+#additional_slider4:target~.imgContainer #additional_img4,
+#additional_slider4:target~.imgContainer #additional_button4 {
+	width: 390px;
+	height: 600px;
+	background-color: transparent;
+	filter: saturate(100%);
+}
+
+#additional_slider5:target~.imgContainer #additional_img5,
+#additional_slider5:target~.imgContainer #additional_button5 {
+	width: 390px;
+	height: 600px;
+	background-color: transparent;
+	filter: saturate(100%);
+}
+
+#additional_slider6:target~.imgContainer #additional_img6,
+#additional_slider6:target~.imgContainer #additional_button6 {
+	width: 390px;
+	height: 600px;
+	background-color: transparent;
+	filter: saturate(100%);
+}
+
+#additional_slider7:target~.imgContainer #additional_img7,
+#additional_slider7:target~.imgContainer #additional_button7 {
+	width: 390px;
+	height: 600px;
+	background-color: transparent;
+	filter: saturate(100%);
+}
+
+#additional_slider8:target~.imgContainer #additional_img8,
+#additional_slider8:target~.imgContainer #additional_button8 {
+	width: 390px;
+	height: 600px;
+	background-color: transparent;
+	filter: saturate(100%);
+}
+
+#additional_slider9:target~.imgContainer #additional_img9,
+#additional_slider9:target~.imgContainer #additional_button9 {
+	width: 390px;
+	height: 600px;
+	background-color: transparent;
+	filter: saturate(100%);
+}
+
+#additional_slider10:target~.imgContainer #additional_img10,
+#additional_slider10:target~.imgContainer #additional_button10 {
+	width: 390px;
+	height: 600px;
+	background-color: transparent;
+	filter: saturate(100%);
+}
+
+#additional_slider11:target~.imgContainer #additional_img11,
+#additional_slider11:target~.imgContainer #additional_button11 {
+	width: 390px;
+	height: 600px;
+	background-color: transparent;
+	filter: saturate(100%);
+}
+
+#additional_slider12:target~.imgContainer #additional_img12,
+#additional_slider12:target~.imgContainer #additional_button12 {
+	width: 390px;
+	height: 600px;
+	background-color: transparent;
+	filter: saturate(100%);
+}
+
+#additional_slider1:target~.imgContainer {
+	left: 100%;
+}
+
+#additional_slider2:target~.imgContainer {
+	left: 80%;
+}
+
+#additional_slider3:target~.imgContainer {
+	left: 60%;
+}
+
+#additional_slider4:target~.imgContainer {
+	left: 40%;
+}
+
+#additional_slider5:target~.imgContainer {
+	left: 20%;
+}
+
+#additional_slider6:target~.imgContainer {
+	left: 0%;
+}
+
+#additional_slider7:target~.imgContainer {
+	left: -20%;
+}
+
+#additional_slider8:target~.imgContainer {
+	left: -40%;
+}
+
+#additional_slider9:target~.imgContainer {
+	left: -60%;
+}
+
+#additional_slider10:target~.imgContainer {
+	left: -80%;
+}
+
+#additional_slider11:target~.imgContainer {
+	left: -100%;
+}
+
+#additional_slider12:target~.imgContainer {
+	left: -120%;
+}
+
+.img {
+	height: 370px;
+}
+
+/*end */
+
+.infos {
+	background-color: aliceblue;
+	background-image: url(images/nihon.jpg);
+	width: 100%;
+	background-size: contain;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	height: auto;
+}
+
+.infolaman {
+	background-color: #240404;
+	bakground width: 50%;
+	height: 3000px;
+	text-align: center;
+	margin-left: 100px;
+	margin-right: 15px;
+	margin-top: 200px;
+}
+
+.showcase {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	color: rgb(241, 246, 148);
+	font-size: 5em;
+}
+
+.image-container {
+	position: relative;
+	display: inline-block;
+}
+
+.image-container img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	height: auto;
+}
+
+.overlay-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 20px;
+	margin-left: -35px;
+	text-align: left;
+}
+
+.overlay-text2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #000000;
+	color: #fff;
+	padding: 10px 20px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.overlay-text3 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #000000;
+	color: #fff;
+	padding: 10px 20px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.overlay-text4 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #000000;
+	color: #fff;
+	padding: 10px 20px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.navbar {
+	overflow: hidden;
+	background-color: #F1C40F;
+	text-align: center; 
+}
+
+.navbar a {
+   display: inline-block; /* Display the anchor elements as blocks */
+   font-size: 16px;
+   color: black;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+}
+
+.ParallaxVideo{ 
+    height: 630px;
+    padding-bottom: 50px;
+    padding-top: 50px; 
+}
+.ParallaxVideo video{ 
+    min-width: 100%;
+    position: fixed;
+    top:0;
+    z-index: -999;
+}
+.ParallaxVideo h1 {
+  color: #fff;
+  font-size: 76px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* Style the sidenav container */
+.sidenav {
+	position: fixed;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 240px; /* Adjust the height as needed */
+	z-index: 1;
+  }
+  
+  /* Style the links inside the sidenav */
+  #mySidenav a {
+	position: absolute; /* Position them relative to the sidenav */
+	left: -80px; /* Position them outside of the screen */
+	transition: 0.3s; /* Add transition on hover */
+	padding: 15px; /* 15px padding */
+	width: 100px; /* Set a specific width */
+	text-decoration: none; /* Remove underline */
+	font-size: 20px; /* Increase font size */
+	color: white; /* White text color */
+	border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  }
+  
+  #mySidenav a:hover {
+	left: 0; /* On mouse-over, make the elements appear as they should */
+  }
+  
+  /* The about link: 20px from the top with a green background */
+  #about {
+	top: 20px;
+	background-color: #f7b8e1;
+  }
+  
+  #blog {
+	top: 80px;
+	background-color: #FF9BD2; /* Blue */
+  }
+  
+  #projects {
+	top: 140px;
+	background-color: #D63484; /* Red */
+  }
+  
+  #contact {
+	top: 200px;
+	background-color: #402B3A; /* Light Black */
+  }
+
+  .videoads{
+     align-items: center;
+	 padding-right: 225px;
+  }
+
+
+
+  /* Add these styles for the bottom buttons */
+.bottom-buttons {
+    text-align: center;
+    margin-top: 480px; /* Adjust the margin as needed */
+}
+
+.bottom-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f7b8e1; /* Green, change as needed */
+    color: white;
+    text-decoration: none; /* Remove the default underline for links */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px; /* Adjust the margin between buttons as needed */
+}
+
+.bottom-buttons a:hover {
+    background-color: #D63484; /* Darker green on hover, change as needed */
+}
+
+
+
+

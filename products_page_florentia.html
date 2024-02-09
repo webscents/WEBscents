@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBscents | Products</title>
+    <link rel="stylesheet" href="products_page.css" class="css">
+    <link rel="stylesheet" href="products_page.js">
+    <link rel="icon" type="image/x-icon" href="images/faviconb.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .product-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .product-image {
+            position: relative;
+        }
+
+        .img-magnifier-container {
+            position: relative;
+        }
+
+        .img-magnifier-glass {
+            position: absolute;
+            border: 3px solid #000;
+            border-radius: 50%;
+            cursor: none;
+            /*Set the size of the magnifier glass:*/
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    <script>
+        function magnify(imgID, zoom) {
+            var img, glass, w, h, bw;
+            img = document.getElementById(imgID);
+            /*create magnifier glass:*/
+            glass = document.createElement("DIV");
+            glass.setAttribute("class", "img-magnifier-glass");
+            /*insert magnifier glass:*/
+            img.parentElement.insertBefore(glass, img);
+            /*set background properties for the magnifier glass:*/
+            glass.style.backgroundImage = "url('" + img.src + "')";
+            glass.style.backgroundRepeat = "no-repeat";
+            glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
+            bw = 3;
+            w = glass.offsetWidth / 2;
+            h = glass.offsetHeight / 2;
+            /*execute a function when someone moves the magnifier glass over the image:*/
+            glass.addEventListener("mousemove", moveMagnifier);
+            img.addEventListener("mousemove", moveMagnifier);
+            /*and also for touch screens:*/
+            glass.addEventListener("touchmove", moveMagnifier);
+            img.addEventListener("touchmove", moveMagnifier);
+            function moveMagnifier(e) {
+                var pos, x, y;
+                /*prevent any other actions that may occur when moving over the image*/
+                e.preventDefault();
+                /*get the cursor's x and y positions:*/
+                pos = getCursorPos(e);
+                x = pos.x;
+                y = pos.y;
+                /*prevent the magnifier glass from being positioned outside the image:*/
+                if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
+                if (x < w / zoom) {x = w / zoom;}
+                if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
+                if (y < h / zoom) {y = h / zoom;}
+                /*set the position of the magnifier glass:*/
+                glass.style.left = (x - w) + "px";
+                glass.style.top = (y - h) + "px";
+                /*display what the magnifier glass "sees":*/
+                glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
+            }
+            function getCursorPos(e) {
+                var a, x = 0, y = 0;
+                e = e || window.event;
+                /*get the x and y positions of the image:*/
+                a = img.getBoundingClientRect();
+                /*calculate the cursor's x and y coordinates, relative to the image:*/
+                x = e.pageX - a.left;
+                y = e.pageY - a.top;
+                /*consider any page scrolling:*/
+                x = x - window.pageXOffset;
+                y = y - window.pageYOffset;
+                return {x : x, y : y};
+            }
+        }
+    </script>
+</head>
+<body>
+
+
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="index.html" id="about">Home</a>
+        <a href="testimonials.html" id="blog">Review</a>
+        <a href="about_page.html" id="projects">About</a>
+        <a href="contact_us.html" id="contact">Contact</a>
+      </div>
+  
+  
+
+
+
+
+<div class="product-container">
+    <div class="product-image">
+        <div class="img-magnifier-container">
+            <img id="myimage" src="images/Florentia.png" width="500" height="500">
+        </div>
+    </div>
+
+    <div class="product-description">
+        <div class="col-2">
+            <a href="index.html"><p>Home</p></a><a href="women_gallery.html"><p>Perfumes</p></a>
+            <h1 style="text-align: center;">Florentia-Scarlet Enigma</h1>
+            <h4>₱150.00</h4>
+            <select>
+                <option>Select Size</option>
+                <option>100mL</option>
+                <option>150mL</option>
+            </select>
+            <input type="number" value="1">
+            <a href="https://www.facebook.com/profile.php?id=61555813506885&is_tour_dismissed=true" class="btn">Order Now</a>
+            <h3>Product Details<i class="fa fa-indent"></i></h3>
+            <br>
+            <p>Scarlet Enigma mirrors Florentia's captivating charm with a vibrant and alluring fragrance. The top notes burst with juicy red berries and citrus, creating a sense of playfulness. The heart of the scent unveils a bouquet of exotic florals, including red roses and orchids, symbolizing Florentia's seductive nature. A base of warm vanilla and hints of spice adds a touch of mystery, leaving a trail of undeniable allure in the wake of Scarlet Enigma.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    magnify("myimage", 3);
+</script>
+
+
+
+<script>
+    var ProductImg = document.getElementByID("ProductImg");
+    var SmallImg = Document.getElementByClassName("small-img");
+
+    SmallImg[0].onclick = function()
+    {
+        ProductImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function()
+    {
+        ProductImg.src = SmallImg[1].src;
+    }
+</script>
+
+<script>
+    function changeImage(targetImage, clickedElement) {
+        var ProductImg = document.getElementById(targetImage);
+        ProductImg.src = clickedElement.src;
+    }
+</script>
+
+</div>
+
+<script>
+magnify("peneloppeImage", 3);
+magnify("cayenaImage", 3);
+</script>
+
+</body>
+</html>

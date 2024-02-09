@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  padding-left: 20px;
+  text-align: justify;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+
+}
+
+
+.product-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.product-image {
+  position: relative;
+}
+
+.img-magnifier-container {
+  position: relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /* Set the size of the magnifier glass: */
+  width: 100px;
+  height: 100px;
+}
+
+.product-description {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-description h1 {
+  color: #333;
+}
+
+.product-description .price {
+  color: #e44d26;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.product-description .description {
+  color: #666;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+
+.small-container{
+  max-width: 1000px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 20px; 
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+
+.single-product{
+  margin-top: 80px;
+}
+
+.small-img-row{
+  display: flex;
+  justify-content: space-around;
+}
+
+.col-2 img{
+  max-width: 100%;
+  padding: 50px 0;
+}
+
+.small-img-col{
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+.single-product .col-2 img{
+  padding: 0;
+}
+
+.single-product .col-2{
+  padding: 20px;
+}
+
+.col-2{
+  flex-basis: 50%;
+  min-width: 300px;
+}
+
+.col-2 h1{
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+}
+
+.single-product select{
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.single-product h4{
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.single-product input{
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 20px;
+  margin-right: 10px;
+  border: 1px solid #FF9BD2;
+}
+
+ input:focus{
+  outline:none;
+}
+a{
+  text-decoration: none;
+  color: #555;
+}
+
+.single-product .fa{
+  color: #ff523b;
+  margin-left: 10px;
+}
+p{
+  color: #555;
+}
+.btn{
+  display: inline-block;
+  background: #ff523b;
+  color:#fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background 0.5s;
+}
+
+.btn: hover{
+  background: #563434;
+
+}
+
+
+/* Style the sidenav container */
+.sidenav {
+	position: fixed;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 240px; /* Adjust the height as needed */
+	z-index: 1;
+  }
+  
+  /* Style the links inside the sidenav */
+  #mySidenav a {
+	position: absolute; /* Position them relative to the sidenav */
+	left: -80px; /* Position them outside of the screen */
+	transition: 0.3s; /* Add transition on hover */
+	padding: 15px; /* 15px padding */
+	width: 100px; /* Set a specific width */
+	text-decoration: none; /* Remove underline */
+	font-size: 20px; /* Increase font size */
+	color: white; /* White text color */
+	border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  }
+  
+  #mySidenav a:hover {
+	left: 0; /* On mouse-over, make the elements appear as they should */
+  }
+  
+  /* The about link: 20px from the top with a green background */
+  #about {
+	top: 20px;
+	background-color: #f7b8e1;
+  }
+  
+  #blog {
+	top: 80px;
+	background-color: #FF9BD2; /* Blue */
+  }
+  
+  #projects {
+	top: 140px;
+	background-color: #D63484; /* Red */
+  }
+  
+  #contact {
+	top: 200px;
+	background-color: #402B3A; /* Light Black */
+  }
+

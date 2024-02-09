@@ -1,0 +1,223 @@
+/* Style the sidenav container */
+.sidenav {
+	position: fixed;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 240px; /* Adjust the height as needed */
+	z-index: 1;
+  }
+  
+  /* Style the links inside the sidenav */
+  #mySidenav a {
+	position: absolute; /* Position them relative to the sidenav */
+	left: -80px; /* Position them outside of the screen */
+	transition: 0.3s; /* Add transition on hover */
+	padding: 15px; /* 15px padding */
+	width: 100px; /* Set a specific width */
+	text-decoration: none; /* Remove underline */
+	font-size: 20px; /* Increase font size */
+	color: white; /* White text color */
+	border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  }
+  
+  #mySidenav a:hover {
+	left: 0; /* On mouse-over, make the elements appear as they should */
+  }
+  
+  /* The about link: 20px from the top with a green background */
+  #about {
+	top: 20px;
+	background-color: #f7b8e1;
+  }
+  
+  #blog {
+	top: 80px;
+	background-color: #FF9BD2; /* Blue */
+  }
+  
+  #projects {
+	top: 140px;
+	background-color: #D63484; /* Red */
+  }
+  
+  #contact {
+	top: 200px;
+	background-color: #402B3A; /* Light Black */
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display:grid;
+    padding-left:150px;
+}
+
+.gallery-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.gallery-image {
+    width: 100vw; /* Full width of the viewport */
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Adjust the transition duration and easing as needed */
+
+.gallery-container:hover .gallery-image {
+    transform: scale(1.1); /* Increase the scale on hover */
+}
+
+.comment-container {
+  background-color: #F8F4EC;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  margin: 15px;
+  padding: 15px;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  max-width: 850px;
+  margin-left: 190px;
+}
+
+.comment-container:hover {
+  transform: scale(1.02);
+}
+
+.comment-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.comment-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.comment-meta {
+  flex-grow: 1;
+}
+
+.comment-divider {
+  border: 1px solid #F8F4EC;
+  margin: 10px 0;
+}
+
+.comment-body {
+  margin-bottom: 15px;
+}
+
+.comment-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.comment-button {
+  cursor: pointer;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.like-button {
+  background-color: #D63484;
+  color: #fff;
+}
+
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+
+.rate:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+
+.rate:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+}
+
+.rate:not(:checked) > label:before {
+  content: '★ ';
+}
+
+.rate > input:checked ~ label {
+  color: #ffc700;    
+}
+
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;  
+}
+
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+.comment-input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.comment-input {
+  flex-grow: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+.comment-submit {
+  padding: 8px;
+  background-color: #D63484;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.comment-submit:hover {
+  background-color: #0056b3;
+}
+
+iframe {
+          width: 900px;
+          height: 450px;
+          border: 2px solid #ddd; /* Add borders */
+          border-radius: 10px; /* Add border radius for rounded corners */
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add box shadow for a subtle effect */
+          animation: fadeIn 0.5s ease-in-out; /* Add fade-in animation */
+      }
+
+      @keyframes fadeIn {
+          from {
+              opacity: 0;
+          }
+          to {
+              opacity: 1;
+          }
+      }
+
+  
